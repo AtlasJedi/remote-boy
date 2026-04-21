@@ -1,0 +1,35 @@
+{
+  "name": "remote-boy",
+  "version": "1.0.0",
+  "description": "Claude Code skill — share local dev environments via cloudflared tunnels for client demos",
+  "keywords": [
+    "claude-code",
+    "claude-skill",
+    "cloudflare",
+    "tunnel",
+    "cloudflared",
+    "demo",
+    "ngrok-alternative"
+  ],
+  "author": "AtlasJedi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtlasJedi/remote-boy.git"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "skill/",
+    "install.js",
+    "uninstall.js",
+    "bin/"
+  ],
+  "bin": {
+    "remote-boy": "./bin/remote-boy.js"
+  },
+  "scripts": {
+    "postinstall": "node install.js"
+  }
+}
